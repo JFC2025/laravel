@@ -11,7 +11,7 @@
     <h1 style="color: blue;">Bienvenido a mi Web</h1>
     <?php
     echo '<span style="color: green;">Hola mundo!</span>';
-    echo '<br>'; // comentario en linea
+    echo '<br>'; // comentario en linea espacio
     echo '<span style="color: black;">Hola Francis!</span>';
     ?>
 </body>
