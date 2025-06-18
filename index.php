@@ -10,7 +10,7 @@
 <body>
     <h1 style="color: blue;">Bienvenido a mi Web</h1>
     <?php
-    echo '<span style="color: red;">Hola mundo!</span>';
+    echo '<span style="color: green;">Hola mundo!</span>';
     echo '<br>'; // comentario en linea
     echo '<span style="color: black;">Hola Francis!</span>';
     ?>
