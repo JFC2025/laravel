@@ -17,6 +17,4 @@ echo "<h2>El número $numero es " . ($esPrimo ? "primo" : "no primo") . "</h2>";
 echo "<p>Un número primo es aquel que solo es divisible por 1 y por sí mismo.</p>";
 echo "<p>Por ejemplo, el número 29 es primo porque solo se puede dividir por 1 y por 29.</p>";
 
-
-
 ?>

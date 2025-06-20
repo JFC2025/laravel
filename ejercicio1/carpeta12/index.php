@@ -10,7 +10,4 @@ echo "<h2>Tabla de multiplicar del $numero</h2>";
 }
 
 
-
-
-
 ?>
