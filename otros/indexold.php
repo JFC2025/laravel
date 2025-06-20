@@ -12,7 +12,10 @@
     <?php
     echo '<span style="color: red;">Hola mundo!</span>';
    
-    echo '<span style="color: black;">Hola Francis!</span>';
+    echo '<span style="color: black;">&nbsp; Hola Francis!</span>';
+    echo '<span style="color: black;">&ensp; Hola Francis!</span>';
+    echo '<span style="color: black;">&emsp; Hola Francis!</span>';
+   echo '<pre><span style="color:red;">VAMOS A REALIZAR ALGUNAS OPERACIONES !</span></pre>';
 
     // variable en php
     $num1 = 10;
@@ -22,6 +25,8 @@
     
     echo "numero 10 numero 2.5";
     echo "<br>".'Suma:'.$num1+$num2; // concatenación de variables 
+
+    echo "<br>".'resta:'.$num1-$num2; // concatenación de variables 
 
     echo "<br>".'multiplica:'.$num1*$num2; // concatenación de variables 
 
