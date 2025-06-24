@@ -24,20 +24,6 @@ class CuentaBancaria {
         echo "Saldo: $" . $this->saldo . "<br><br>";
     }
 
-// setters y getters
-    public function getTitular() {
-        return $this->titular;
-    }
-
-    public function setTitular($titular) {
-        $this->titular = $titular;
-    }
-    public function getSaldo() {
-        return $this->saldo;
-    }
-    public function setSaldo($saldo) {
-        $this->saldo = $saldo;
-    }
     // Método para depositar dinero
     public function depositar($cantidad) {
         if ($cantidad > 0) {
@@ -71,8 +57,7 @@ $cuenta1->retirar(1500); // Intento de retirar más de lo que hay en la cuenta
 $cuenta1->retirar(-100); // Intento de retirar una cantidad negativa
 $cuenta1->depositar(-200); // Intento de depositar una cantidad negativa
 $cuenta1->mostrarSaldo();
-$cuenta1->setTitular("María López");
-$cuenta1->mostrarSaldo();
+
 
 
 

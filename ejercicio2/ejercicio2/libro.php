@@ -29,30 +29,30 @@ class Libro {
         echo "Año de Publicación: " . $this->anioPublicacion . "<br><br>";
     }
 
-    // Getters y Setters
-    public function getTitulo() {
-        return $this->titulo;
-    }
+    // // Getters y Setters
+    // public function getTitulo() {
+    //     return $this->titulo;
+    // }
 
-    public function setTitulo($titulo) {
-        $this->titulo = $titulo;
-    }
+    // public function setTitulo($titulo) {
+    //     $this->titulo = $titulo;
+    // }
 
-    public function getAutor() {
-        return $this->autor;
-    }
+    // public function getAutor() {
+    //     return $this->autor;
+    // }
 
-    public function setAutor($autor) {
-        $this->autor = $autor;
-    }
+    // public function setAutor($autor) {
+    //     $this->autor = $autor;
+    // }
 
-    public function getAnioPublicacion() {
-        return $this->anioPublicacion;
-    }
+    // public function getAnioPublicacion() {
+    //     return $this->anioPublicacion;
+    // }
 
-    public function setAnioPublicacion($anioPublicacion) {
-        $this->anioPublicacion = $anioPublicacion;
-    }
+    // public function setAnioPublicacion($anioPublicacion) {
+    //     $this->anioPublicacion = $anioPublicacion;
+    // }
 }
 
 // 👇 Zona fuera de la clase: creación de objetos y uso del programa
@@ -66,8 +66,8 @@ $libro1->mostrarInformacion();
 $libro2->mostrarInformacion();
 $libro3->mostrarInformacion();
 
-// Encapsulamiento: modificar un atributo usando setter
-$libro1->setTitulo("El Principito - Edición Especial");
-echo "Nuevo título actualizado: " . $libro1->getTitulo() . "<br>";
+// // Encapsulamiento: modificar un atributo usando setter
+// $libro1->setTitulo("El Principito - Edición Especial");
+// echo "Nuevo título actualizado: " . $libro1->getTitulo() . "<br>";
 
 ?>
