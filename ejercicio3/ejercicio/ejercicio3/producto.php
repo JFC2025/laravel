@@ -1,12 +1,12 @@
 <?php
 
-Catálogo de productos
-Descripción: Desarrolla un catálogo de productos con distintas categorías:
-● Producto (clase base): atributos nombre, precio.
-● Electronico y Ropa (heredan de Producto): atributos extra (garantia, talla respectivamente).
-Implementa:
-● Método mostrarDetalle() en la clase base y sobreescribirlo en cada subclase para mostrar toda la información.
-● Usa encapsulamiento para validar que el precio siempre sea positivo.
+// Catálogo de productos
+// Descripción: Desarrolla un catálogo de productos con distintas categorías:
+// ● Producto (clase base): atributos nombre, precio.
+// ● Electronico y Ropa (heredan de Producto): atributos extra (garantia, talla respectivamente).
+// Implementa:
+// ● Método mostrarDetalle() en la clase base y sobreescribirlo en cada subclase para mostrar toda la información.
+// ● Usa encapsulamiento para validar que el precio siempre sea positivo.
 
 class Producto {
     protected $nombre;
@@ -24,7 +24,7 @@ class Producto {
         $this->precio = $precio;
     }
 
-    public function mostrarDetalle() {
+    public function mostrarInformacion() {
         return "Nombre: {$this->nombre}, Precio: {$this->precio}";
     }
 }

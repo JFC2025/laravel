@@ -2,7 +2,7 @@
 
 require_once 'producto.php';
 // Subclase Ropa
-class Ropa extends Prenda {
+class Ropa extends Producto {
     private $talla;
 
     public function __construct($nombre, $precio, $talla) {
