@@ -1,7 +1,7 @@
 <?php
 class Database {
     private static $tasks = [];
-    public static function getTask() {
+    public static function getTasks() {
         
         
         return self::$tasks;

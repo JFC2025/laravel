@@ -3,11 +3,11 @@ require_once "models/Task.php";
 
 class TaskController{
 
-    public function index()¨{
+    public function index(){
 
         $tasks = Task::getAllTasks();
 
-        require_once "views/tasks_view.php"
+        require_once "views/tasks_view.php";
     }
     // metodo
     public function addTask(){

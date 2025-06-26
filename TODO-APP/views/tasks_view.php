@@ -8,16 +8,19 @@
 <body>
 
     <h1>Lista de tareas</h1> 
+
+    <ul>
+        <?php foreach($tasks as $task):  ?>
+        <li><?php echo htmlspecialchars($task->getDescription()) ?></li>
+        <?php endforeach; ?>
+    </ul>
+    
     <form action="index.php?action=add" method="POST">
         <input type ="text" name="task" placeholder="Nueva tarea" required>
         <button type="submit">agregar</button>
     </form>
     
-    <ul>
-        <?php foreach($tasks as $task)  ?>
-        <li><?php echo htmlspecialchars($tark->getDescription()) ?>/li>
-        <?php endforeach; ?>
-    </ul>
+    
 </body>
 </html>
 
