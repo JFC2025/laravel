@@ -1,6 +1,8 @@
 <?php
 
-require_once "controllers/TaskController.php";
+require_once "src/controllers/TaskController.php";
+
+use TodoApp\controllers\TaskController;
 
 $controller = new TaskController();
 

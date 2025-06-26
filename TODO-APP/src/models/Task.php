@@ -1,5 +1,9 @@
 <?php
-include_once "config.php";
+namespace TodoApp\Models;
+require_once "src/config/Database.php";
+
+
+use todoApp\config\Database;
 
 class Task {
     private $description;
