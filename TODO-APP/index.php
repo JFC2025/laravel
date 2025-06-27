@@ -12,7 +12,7 @@ spl_autoload_register(function($class){
         return;
 
     }
-    // estraer la parte del namespare  despues del prefijo
+    // extraer la parte del namespare  despues del prefijo
     $relative_class = substr($class,$len);
 
     $file = $base_dir . str_replace('\\','/', $relative_class).'.php';
@@ -29,14 +29,5 @@ use TodoApp\controllers\TaskController;
 
 $controller = new TaskController();
 
-$action =isset($_GET['action']) ? $_GET['action'] : 'index';
 
-switch ($action){
-    case 'add':
-        $controller->addTask();
-        break;
 
-    default:
-        $controller->index();
-        break;
-}

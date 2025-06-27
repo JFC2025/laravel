@@ -14,7 +14,19 @@ class Database {
     private static $pass = "";
     private static $pdo = null;
 
+    public static function connect(){
+      if (self ::$pdo === null) {
+        $dns ="mysql:host" . self::$host.";dbname=". self::$db;
+        try {
 
+        self::$pdo = new PDO($dsn,self::$user,self::$pass);
+        self::$pdo->setAttribute(PDO::ATTR_ERRORMODE, PDO::ERRORMODE_EXCEPTION);
+
+      } catch (PDOException $e){
+        die ("Error en la conexion: " . $e->getMessage());
+    }
+}
+  
 
 //     public static function getTasks() {
 //         session_start();
@@ -31,5 +43,6 @@ class Database {
 //       }
 //       $_SESSION['tasks'][]=$task;
 //     }
-// }    
+ } 
+   } 
     
