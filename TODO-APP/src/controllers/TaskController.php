@@ -10,9 +10,9 @@ class TaskController{
     {
         if($_SERVER['REQUEST_METHOD'] === 'POST')
         {
-            if (isset($_POST['description']) && ! emply(trim($_POST['description'])))
+            if (isset($_POST['description']) && ! empty(trim($_POST['description'])))
             {
-                Tark::add(trim($_POST['description']));
+                Task::add(trim($_POST['description']));
             }
         }
     }
@@ -20,7 +20,7 @@ class TaskController{
     if (isset($_GET['toggle']))
     {
         $id =(int) $_GET['toggle'];
-        task::toggle($id);
+        Task::toggle($id);
     }
     
     if (isset($_GET['delete']))
@@ -29,9 +29,11 @@ class TaskController{
         Task::delete($id);
     }
 
-    $tasks = task::getAll();
+    $tasks = Task::getAll();
 
     include __DIR__ . '/ ../views/tasks.php';
+
+}
 
     // public function index(){
 
@@ -50,4 +52,4 @@ class TaskController{
     //     header ('Location: index.php');
     // }
 
-}
+

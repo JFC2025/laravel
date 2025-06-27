@@ -29,5 +29,5 @@ use TodoApp\controllers\TaskController;
 
 $controller = new TaskController();
 
-
+$controller->handleRequest();
 
