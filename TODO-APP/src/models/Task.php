@@ -1,6 +1,6 @@
 <?php
 namespace TodoApp\Models;
-require_once "src/config/Database.php";
+// require_once "src/config/Database.php";
 
 
 use todoApp\config\Database;
