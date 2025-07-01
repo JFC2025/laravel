@@ -3,7 +3,7 @@ namespace TodoApp\Models;
 // require_once "src/config/Database.php";
 
 
-use todoApp\config\Database;
+use TodoApp\config\Database;
 use PDO;
 
 class Task {
@@ -12,12 +12,12 @@ class Task {
     {
         $pdo = Database::connect();
         $stmt = $pdo->query("SELECT * FROM task ORDER BY id DESC");
-        ruturm $stmt->fetchAll(PDO::FETCH_ASSOC);
+        return $stmt->fetchAll(PDO::FETCH_ASSOC);
     }
         public static function add($description)
         {
             $pdo =Database::connect();
-            $stmt = $pdo->prepare("INSERT INTO task (description) VALUES (:description");
+            $stmt = $pdo->prepare("INSERT INTO task (description) VALUES (:description)");
             $stmt->execute(['description'=> $description]);
         }
 
