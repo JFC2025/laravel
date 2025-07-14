@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -35,11 +37,10 @@
                 <td><?php echo $task['id']?></td>
                 <td class="<?php $task['completed'] ?'text-decoration-line-through text-muted':'' ?>">
                
-                    <?php echo htmlspecialchars($task['description'])?></td>
+                    <?php echo htmlspecialchars($task['description'])?>
+                </td>
                 <td>
-                
-                <td>
-                     <?php echo$tark['completed'] ? 'Hecha':'Pendiente'?>
+                     <?php echo$task['completed'] ? 'Hecha':'Pendiente'?>
                 </td>
 
                 <td>
@@ -57,5 +58,3 @@
     
     </div>
 </body>
-</html>
-

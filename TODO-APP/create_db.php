@@ -1,5 +1,5 @@
-<?php
-user todo\Config\Config_db;
+<?ph
+require_once dirname__DIR__ . '/src/config/config_db.php';
 try
 {
 $pdo = new PDO("mysql:host=" . DB_HOST .";", DB_USER, DB_PASS);

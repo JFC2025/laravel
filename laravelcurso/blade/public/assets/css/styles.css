@@ -1,0 +1,105 @@
+/* color todo lo de h1 en rojo */
+h1 {
+    color:rgb(235, 6, 6);
+    font-size: 50px;
+}
+
+h3{
+    color:blanchedalmond
+}
+
+p{
+    color:blanchedalmond
+}
+/* marco de la imagen subir */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* marcos imagenes */
+header {
+    width: 100vw;
+    height: 80px;
+    background-color:beige;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* menu del navegador */
+/* barra navegar color */
+header nav{
+    width: 100 vw;
+    font-size:x-large; 
+}
+
+/* mostrar en horizontal barra navegador */
+header nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+/* la separacion del menu letras navegador */
+header nav ul li {
+    margin: 15px;
+}
+
+/* cambiar color letra menu enlase o navegador */
+header nav ul li a {
+    color: #6b6b6b;
+    text-decoration: none;
+}
+
+/* cuando pincho letra menu cambia a color verde    */
+header nav ul li a:hover {
+    color:rgb(50, 3, 240);
+}
+
+/* te crea encima y debajo de imagen bordes */
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid#2f2d2d;
+    border-radius: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 5px;
+    max-width: 200px;
+    text-align: center;
+    background-color: #0b0b0b; /* << Añadido: color del marco fuera de la foto */
+    margin-top: 30px; 
+}
+
+/* hacer imagen mas grande */
+.card img {
+    width: 100%;         /* Ocupa todo el ancho de la tarjeta */
+    margin: 10px;
+    padding: 5px;        /* Mantiene la proporción */
+   }
+
+ /* en todas las card con un parafo cambiar */
+.cards  {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100vw;
+}
+/* todo  lo que hay main una separacion pagina web */
+main {
+    padding: 10px;
+}
+
+/* alinear en Services */
+main h1 {
+    text-align: center;
+}
+
+body {
+    background: linear-gradient(90deg,rgba(2, 0, 36, 1) 0%, rgba(7, 55, 151, 1) 24%, rgba(8, 23, 130, 1) 43%, rgba(9, 9, 121, 1) 52%, rgba(0, 212, 255, 1) 100%);
+}

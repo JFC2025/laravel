@@ -4,7 +4,9 @@ namespace TodoApp\Config;
 //src/config/Database.php
 use PDO;
 use PDOException;
-use Todo\config\Config_db;
+
+require_once __DIR__ . '/config_db.php';
+//use Todo\config\Config_db;
 
 //require_once__DIR__ .'config_db.php';
 
@@ -37,25 +39,12 @@ class Database {
         }
        
     }
+    
 }
 
-  
+  return self::$pdo;
 
-//     public static function getTasks() {
-//         session_start();
-//         return isset($_SESSION['tasks']) ? $_SESSION['tasks']:[];
-        
-//         //return self::$tasks;
-//         }
-//     public static function addTask($task) {
-//       // self::$tasks = $task;  
-//       session_start();
-//       if (!isset($_SESSION['tasks'])){
-//         $_SESSION['tasks']=[];
 
-//       }
-//       $_SESSION['tasks'][]=$task;
-//     }
  } 
-   } 
+} 
     
